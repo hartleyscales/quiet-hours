@@ -1,0 +1,30 @@
+# installed packages, build output, local secrets
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+__pycache__/
+*.pyc
+
+# reference pages of other products
+refs/
+
+# renders: the scripts are kept, the heavy outputs are not
+*.blend
+*.blend1
+*.exr
+submission/renders/**/*.png
+submission/renders/**/*.txt
+submission/renders/**/work/
+submission/deck/preview/
+submission/deck/old/
+submission/deck/art/**/*.png
+submission/deck/art/**/*.jpg
+submission/deck/art/**/*.svg
+submission/screens/old/
+submission/DEVPOST.old.md

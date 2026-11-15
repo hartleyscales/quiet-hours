@@ -1,0 +1,159 @@
+/* Quiet Hours, the submitted deck. The app's own language: one picture, one statement in the serif, one grey line.
+   Greige surface, ink, one muted grey; near-black for the night slides. Outfit for everything; Instrument Serif italic
+   once per slide, for the statement. One dot is one student, on every slide. */
+body { font-family: 'Outfit', Arial, sans-serif; color: #1C1A18; }
+section { background: #EAE5DE; color: #1C1A18; font-family: 'Outfit', Arial, sans-serif; padding: 128px; box-sizing: border-box; }
+section.night { background: #080706; color: #EAE5DE; }
+.bg { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+
+.say { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; font-size: 104px; line-height: 1.02; }
+.say.big { font-size: 190px; line-height: 0.96; }
+.line { font-size: 34px; font-weight: 300; line-height: 1.38; color: #6A635B; padding-top: 32px; }
+.night .line { color: #A39C92; }
+.note { font-size: 24px; font-weight: 400; line-height: 1.4; color: #6A635B; }
+.night .note { color: #A39C92; }
+.label { font-size: 24px; font-weight: 500; letter-spacing: 3px; color: #6A635B; }
+.night .label { color: #A39C92; }
+.cap { font-size: 32px; font-weight: 400; line-height: 1.28; }
+.sub { font-size: 26px; font-weight: 300; line-height: 1.4; color: #6A635B; padding-top: 10px; }
+.night .sub { color: #A39C92; }
+
+/* the statement block, top left, at the same place on every slide */
+.head { position: absolute; left: 128px; top: 112px; width: 1500px; }
+.head.half { width: 820px; }
+.at { position: absolute; }
+
+/* numbers as the picture */
+.num { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 292px; line-height: 0.86; }
+.trio { position: absolute; left: 128px; top: 430px; width: 1664px; display: flex; flex-direction: row; gap: 72px; align-items: flex-start; }
+.trio .one { flex: 1; display: flex; flex-direction: column; }
+.trio .cap { padding-top: 26px; }
+.trio img { width: 284px; height: 284px; }
+
+/* the gathering */
+.ends { position: absolute; left: 128px; top: 900px; width: 1664px; display: flex; flex-direction: row; justify-content: space-between; }
+.ends .one { width: 640px; display: flex; flex-direction: column; }
+
+/* the week as 168 hours, across the full width of the slide's lower half */
+.hours { position: absolute; left: 238px; top: 500px; width: 1554px; height: 453px; }
+.days { position: absolute; left: 128px; top: 500px; width: 100px; height: 453px; display: flex; flex-direction: column; }
+.days p { height: 64.75px; line-height: 64.75px; font-size: 24px; color: #6A635B; }
+.ticks { position: absolute; left: 238px; top: 452px; width: 1554px; display: flex; flex-direction: row; }
+.ticks p { width: 388.5px; font-size: 24px; color: #6A635B; }
+
+/* where you are in the deck: ten small dots, as the app marks its steps */
+.pips { position: absolute; left: 128px; bottom: 70px; display: flex; flex-direction: row; gap: 12px; }
+.pips div { width: 10px; height: 10px; border-radius: 5px; background: #CFC8BD; }
+.pips div.on { background: #1C1A18; }
+.night .pips div { background: #2E2A26; }
+.night .pips div.on { background: #EAE5DE; }
+.src { position: absolute; right: 128px; bottom: 60px; width: 1300px; text-align: right; font-size: 24px; line-height: 1.3; color: #6A635B; }
+.night .src { color: #A39C92; }
+.ends .one.r { align-items: flex-end; text-align: right; }
+
+/* the infographic parts. Raised cards carry the app's soft depth: light from the upper left, shadow to the lower right. */
+.say.one { font-size: 88px; }
+.card { background: #EFEBE5; border-radius: 40px; padding: 40px 44px; box-sizing: border-box; display: flex; flex-direction: column; box-shadow: -12px -12px 28px rgba(255,255,255,0.75), 14px 18px 36px rgba(28,26,24,0.16); }
+.flow { position: absolute; left: 128px; top: 348px; width: 1664px; display: flex; flex-direction: row; gap: 40px; align-items: stretch; }
+.flow .card { flex: 1; height: 500px; }
+.q { font-size: 30px; font-weight: 300; line-height: 1.34; color: #3A3632; padding-top: 16px; }
+.big { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 200px; line-height: 0.9; padding-top: 28px; }
+.ans { font-size: 30px; font-weight: 500; line-height: 1.3; padding-top: 12px; }
+.grow { flex: 1; }
+.take { position: absolute; left: 128px; top: 900px; width: 1300px; font-size: 34px; font-weight: 400; line-height: 1.3; }
+.facts { position: absolute; left: 128px; top: 806px; width: 1664px; display: flex; flex-direction: row; gap: 64px; }
+.facts .one { flex: 1; display: flex; flex-direction: column; }
+.facts h3 { font-size: 32px; font-weight: 400; line-height: 1.2; padding-bottom: 8px; }
+.facts p { font-size: 26px; font-weight: 300; line-height: 1.38; color: #3A3632; }
+.night .facts p { color: #BEB6AB; }
+/* a comparison, row by row */
+.cmp { position: absolute; left: 128px; top: 748px; width: 1664px; display: flex; flex-direction: column; }
+.cmp .r { display: flex; flex-direction: row; border-top: 2px solid #2A2622; padding: 13px 0; }
+.cmp .r p { flex: 1; font-size: 26px; font-weight: 300; line-height: 1.3; color: #BEB6AB; }
+.cmp .r p.k { flex: none; width: 300px; font-weight: 500; color: #EAE5DE; }
+.cmp .r.h p { font-size: 24px; font-weight: 500; letter-spacing: 3px; color: #8C857B; }
+.cmp .r.us p { color: #EAE5DE; font-weight: 400; }
+.tag { position: absolute; font-size: 26px; font-weight: 400; line-height: 1.3; color: #EAE5DE; }
+
+/* five moments under the week's picture, each set under its own pane */
+.step { position: absolute; top: 880px; width: 215px; display: flex; flex-direction: column; }
+.step h3 { font-size: 28px; font-weight: 500; line-height: 1.2; padding-bottom: 6px; }
+.step p { font-size: 24px; font-weight: 300; line-height: 1.34; color: #3A3632; }
+.step p.when { font-weight: 500; letter-spacing: 2px; color: #6A635B; padding-bottom: 8px; }
+
+/* prose: whole sentences at a size that reads from across a room, a few per slide */
+.col { position: absolute; left: 128px; top: 112px; width: 780px; }
+.col.wide { width: 1180px; }
+.prose { font-size: 36px; font-weight: 300; line-height: 1.42; color: #3A3632; padding-top: 34px; }
+.night .prose { color: #CFC8BD; }
+.prose.first { padding-top: 44px; }
+.two { position: absolute; left: 1000px; top: 250px; width: 792px; display: flex; flex-direction: row; gap: 56px; }
+.two .one { flex: 1; display: flex; flex-direction: column; }
+.two .cap { padding-top: 22px; font-size: 30px; font-weight: 400; color: #3A3632; }
+
+/* the path: three pictures that grow, each with its step beneath */
+.pc { position: absolute; top: 730px; display: flex; flex-direction: column; }
+.pc .when { font-size: 24px; font-weight: 500; letter-spacing: 2px; color: #8C857B; padding-bottom: 10px; }
+.pc h3 { font-size: 34px; font-weight: 400; line-height: 1.2; padding-bottom: 10px; color: #EAE5DE; }
+.pc p { font-size: 28px; font-weight: 300; line-height: 1.4; color: #BEB6AB; }
+
+/* the two prices, on one raised card with a hairline between them */
+.pair { position: absolute; left: 980px; top: 250px; width: 812px; flex-direction: row; align-items: stretch; padding: 46px 48px 48px; }
+.pair .label { padding-bottom: 14px; }
+.pair .one { flex: 1; display: flex; flex-direction: column; }
+.pair .one.b { padding-left: 44px; }
+.pair .vr { flex: none; width: 2px; background: #D9D2C7; }
+.pair .num { font-size: 232px; line-height: 0.9; }
+.pair .rule { width: 72px; height: 2px; background: #1C1A18; opacity: 0.28; }
+.pair .gap { height: 30px; }
+.pair .cap { padding-top: 22px; font-size: 30px; font-weight: 400; line-height: 1.3; color: #3A3632; }
+
+/* the board laid over campus: each post a star where it is happening */
+.star { position: absolute; width: 14px; height: 14px; border-radius: 7px; background: #EAE5DE; box-shadow: 0 0 22px 6px rgba(234,229,222,0.28); }
+.star.ring { background: none; border: 2px solid #8C857B; box-shadow: none; box-sizing: border-box; }
+.pin { position: absolute; width: 360px; display: flex; flex-direction: column; }
+.pin.r { align-items: flex-end; text-align: right; }
+.pin h3 { font-size: 26px; font-weight: 400; line-height: 1.25; color: #EAE5DE; }
+.pin p { font-size: 24px; font-weight: 300; line-height: 1.3; color: #A39C92; }
+.way { position: absolute; width: 4px; height: 4px; border-radius: 2px; background: #6A635B; }
+
+/* what people wrote, and the nineteen lines behind one count */
+.wrote { position: absolute; left: 980px; top: 168px; width: 812px; display: flex; flex-direction: row; gap: 18px; }
+.wrote div { flex: 1; display: flex; flex-direction: column; }
+.wrote p { font-size: 24px; font-weight: 300; line-height: 36px; color: #9A9389; white-space: nowrap; }
+.wrote p::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 5px; background: #CFC8BD; margin-right: 12px; vertical-align: 2px; }
+.wrote p.on { color: #1C1A18; font-weight: 400; }
+.wrote p.on::before { background: #1C1A18; box-shadow: 2px 3px 5px rgba(28,26,24,0.3); }
+.count { position: absolute; left: 980px; top: 806px; width: 812px; padding: 30px 40px 32px; }
+.count h3 { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; font-size: 54px; line-height: 1.1; }
+.count p { font-size: 24px; font-weight: 300; line-height: 1.35; color: #3A3632; padding-top: 10px; }
+
+/* the AI's three jobs as a diagram: dark pills are Claude, outlined pills are people or code, cards are what moves between them */
+.ll { position: absolute; left: 128px; width: 340px; display: flex; flex-direction: column; }
+.ll .when { font-size: 24px; font-weight: 500; letter-spacing: 3px; color: #6A635B; padding-bottom: 8px; }
+.ll h3 { font-size: 32px; font-weight: 400; line-height: 1.2; }
+.ll .why { font-size: 24px; font-weight: 300; line-height: 1.35; color: #3A3632; padding-top: 8px; }
+.nd { position: absolute; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 22px; }
+.nd p { font-size: 26px; line-height: 1.22; text-align: center; }
+.nd.data { background: #EFEBE5; border-radius: 28px; box-shadow: -8px -8px 20px rgba(255,255,255,0.75), 10px 12px 26px rgba(28,26,24,0.15); }
+.nd.ai { background: #1C1A18; border-radius: 60px; box-shadow: 8px 10px 20px rgba(28,26,24,0.25); }
+.nd.ai p { color: #EAE5DE; }
+.nd.gate { border: 2px solid #1C1A18; border-radius: 60px; }
+.hair { position: absolute; left: 128px; width: 1664px; height: 2px; background: #D9D2C7; }
+.nd.s { padding: 0 14px; }
+.nd.s p { font-size: 24px; }
+.hair.r { left: 980px; width: 812px; }
+
+/* Claude and its three jobs: one hub, three spokes, each ending at the piece of the app that job produces */
+.shot { position: absolute; top: 356px; width: 500px; height: 373px; border-radius: 36px; box-shadow: -10px -10px 24px rgba(255,255,255,0.8), 12px 16px 32px rgba(28,26,24,0.18); }
+.job { position: absolute; top: 772px; width: 488px; display: flex; flex-direction: column; }
+.job h3 { font-size: 34px; font-weight: 400; line-height: 1.2; padding-bottom: 10px; }
+.job p { font-size: 28px; font-weight: 300; line-height: 1.38; color: #3A3632; }
+.hub { position: absolute; left: 850px; top: 232px; width: 220px; height: 76px; border-radius: 38px; background: #1C1A18; box-shadow: 8px 10px 20px rgba(28,26,24,0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.hub p { font-size: 32px; font-weight: 400; color: #EAE5DE; }
+
+/* the AI's three qualities: three raised cards under the title, each led by a dot picture drawn the way the app draws its own */
+.pt { position: absolute; top: 326px; width: 512px; height: 560px; padding: 44px 44px; }
+.pt img { width: 170px; height: 170px; object-fit: contain; }
+.pt h3 { font-size: 42px; font-weight: 400; line-height: 1.2; padding-top: 26px; padding-bottom: 12px; }
+.pt p { font-size: 30px; font-weight: 300; line-height: 1.4; color: #3A3632; }

@@ -1,0 +1,52 @@
+{
+  "image": {
+    "width": 2560,
+    "height": 1440,
+    "background": "#080706"
+  },
+  "ring_centre": [
+    857.6,
+    1072.8
+  ],
+  "ring_radius_px": {
+    "x": 19.6,
+    "y": 12.9
+  },
+  "crowd_centre": [
+    808.5,
+    854.0
+  ],
+  "crowd_bounds": {
+    "left": 237,
+    "right": 1489,
+    "top": 632,
+    "bottom": 1155
+  },
+  "moon_centre": [
+    2014.7,
+    626.4
+  ],
+  "moon_radius_px": 392.5,
+  "moon_radius_xy_px": [
+    396.2,
+    388.8
+  ],
+  "arc_midpoint": [
+    1347.8,
+    536.9
+  ],
+  "arc_start": [
+    1216.0,
+    864.0
+  ],
+  "arc_end": [
+    1663.0,
+    577.8
+  ],
+  "counts": {
+    "crowd": 2817,
+    "arc": 280,
+    "out": 1,
+    "moon": 3098
+  }
+}

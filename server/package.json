@@ -1,0 +1,28 @@
+{
+  "name": "quiet-hours-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Quiet Hours API: Cloudflare Worker + D1. See ../docs/API.md and ../docs/SERVER-NOTES.md.",
+  "scripts": {
+    "db:migrate:local": "wrangler d1 migrations apply quiet-hours --local",
+    "dev": "npm run db:migrate:local && wrangler dev --port 8790 --var ENVIRONMENT:development --var SIGNIN_CODE_DELIVERY:INSECURE_DEV_RETURN_CODE_IN_RESPONSE --var ADMIN_SECRET:local-dev-admin-secret",
+    "dev:fake-ai": "npm run db:migrate:local && wrangler dev --port 8790 --var ENVIRONMENT:development --var SIGNIN_CODE_DELIVERY:INSECURE_DEV_RETURN_CODE_IN_RESPONSE --var ADMIN_SECRET:local-dev-admin-secret --var AI_MODE:DEV_FAKE_AI_NOT_REAL",
+    "demo:seed": "node scripts/demo-seed.mjs",
+    "demo:week": "node scripts/demo-week.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.8.0",
+    "hono": "4.13.18",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "1.5.1",
+    "@cloudflare/workers-types": "5.20261114.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12",
+    "wrangler": "4.124.0"
+  }
+}

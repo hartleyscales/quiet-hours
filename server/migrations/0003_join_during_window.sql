@@ -1,0 +1,22 @@
+-- Quiet Hours schema, version 3.
+--
+-- Someone who is out can join or come back while the window is on
+-- (POST /v1/me/rejoin during `live`), and hours given back count only time
+-- actually spent in.
+--
+--   * Someone who had skipped and joins during the window: status goes to
+--     'in' and joined_at is set to the time they joined. From then on they
+--     are counted like someone whose app first saw the week mid-window: in,
+--     and hours, from joined_at; not in at startsAt. No new column.
+--   * Someone who left and comes back: status goes back to 'in' and left_at
+--     to NULL (so the check (status = 'left') = (left_at IS NOT NULL) still
+--     holds), and two new columns keep the rest:
+--       came_back_at  when they last came back. NULL if they never have. A
+--                     leave reported with a time before it is ignored: that
+--                     leave was already recorded before they came back.
+--       away_ms       total time between leaving and coming back. Not
+--                     counted toward hours given back.
+--   A row with came_back_at set has left at least once, so it is never
+--   counted as having stayed.
+ALTER TABLE participation ADD COLUMN came_back_at INTEGER;
+ALTER TABLE participation ADD COLUMN away_ms INTEGER NOT NULL DEFAULT 0 CHECK (away_ms >= 0);

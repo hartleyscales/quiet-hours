@@ -1,0 +1,259 @@
+# XcodeGen spec for the Quiet Hours lock engine.
+# Generate with:  cd ios && xcodegen generate
+#
+# Two variants of the same app, one scheme each. The lock mode is chosen at compile time.
+#   QuietHours       Screen Time mode. App + four Screen Time extensions + widgets.
+#                    Needs Family Controls, which Apple gives only to paid developer teams.
+#   QuietHoursFront  Front mode. App + widgets only. No Family Controls, no Screen Time
+#                    extensions, so it signs on a free Personal Team.
+# Both install as the same app (same bundle id), so one replaces the other on a phone and
+# they share stored data through the App Group.
+#
+# Minimum iOS is 26.0 because that release added scheduled Live Activities
+# (Activity.request(..., start:)), which is the only way to have the lock-screen
+# countdown appear at the window's start while the app is closed, without push.
+# Everything else used here exists from iOS 16; features from 26.4 / 26.5 are
+# behind #available checks.
+
+name: QuietHours
+
+options:
+  bundleIdPrefix: com.hms-web-development
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: false
+
+settings:
+  base:
+    # The one place the signing team is set. Every target in both variants uses it.
+    DEVELOPMENT_TEAM: AT9J4ACTP9
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1"
+    GENERATE_INFOPLIST_FILE: NO
+    # The one place the app's bundle id is set. Extensions append to it.
+    QH_BUNDLE_ID: com.hms-web-development.QuietHours
+    # The one place the App Group id is set. Entitlements and Info.plists read it from here.
+    QH_APP_GROUP: group.com.hms-web-development.QuietHours
+    # The API the interface talks to (Info.plist key QuietHoursAPIBaseURL). Point it at a hosted
+    # server here, or per build: xcodebuild ... QH_API_BASE_URL=https://example.org
+    # A launch argument overrides it without rebuilding: -QHAPIBaseURL http://localhost:8791
+    QH_API_BASE_URL: "http://localhost:8790"
+
+targets:
+
+  # Screen Time mode. Hosts the interface (App/UI), the engine and, in DEBUG builds, the bare
+  # debug screen (reached from the settings sheet).
+  QuietHours:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - "Engine/Front/**"
+      - path: Shared/Core
+      - path: Shared/Activity
+      - path: Shared/ScreenTime
+    info:
+      path: Config/QuietHours/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours
+        QuietHoursAppGroup: $(QH_APP_GROUP)
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSSupportsLiveActivities: true
+        # The interface (App/UI): bundled fonts (App/Resources/Fonts), the API's address, and
+        # plain-HTTP access to a development server on this Mac or the local network.
+        UIAppFonts:
+          - Outfit-Light.ttf
+          - Outfit-Regular.ttf
+          - Outfit-Medium.ttf
+          - InstrumentSerif-Italic.ttf
+        QuietHoursAPIBaseURL: $(QH_API_BASE_URL)
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription: Quiet Hours connects to a development server on your local network.
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - $(PRODUCT_BUNDLE_IDENTIFIER).window-end
+    entitlements:
+      path: Config/QuietHours/QuietHours.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID)
+    dependencies:
+      - target: QuietHoursMonitor
+      - target: QuietHoursShieldConfiguration
+      - target: QuietHoursShieldAction
+      - target: QuietHoursWidgets
+    scheme:
+      gatherCoverageData: false
+
+  # Front mode: Quiet Hours stays in front during the window; leaving it counts as a reach.
+  # Same interface, engine API and debug screen. Compiles App/Engine/Front instead of
+  # App/Engine/ScreenTime, and sets QH_FRONT_MODE.
+  QuietHoursFront:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - "Engine/ScreenTime/**"
+      - path: Shared/Core
+      - path: Shared/Activity
+    info:
+      path: Config/QuietHoursFront/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours
+        QuietHoursAppGroup: $(QH_APP_GROUP)
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSSupportsLiveActivities: true
+        # The interface (App/UI): bundled fonts (App/Resources/Fonts), the API's address, and
+        # plain-HTTP access to a development server on this Mac or the local network.
+        UIAppFonts:
+          - Outfit-Light.ttf
+          - Outfit-Regular.ttf
+          - Outfit-Medium.ttf
+          - InstrumentSerif-Italic.ttf
+        QuietHoursAPIBaseURL: $(QH_API_BASE_URL)
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription: Quiet Hours connects to a development server on your local network.
+        UIBackgroundModes:
+          - fetch
+        BGTaskSchedulerPermittedIdentifiers:
+          - $(PRODUCT_BUNDLE_IDENTIFIER).window-end
+        # Front mode checks, without prompting, whether Face ID is set up (it decides how far
+        # the lock signal can be trusted). It never asks the person to use Face ID.
+        NSFaceIDUsageDescription: Quiet Hours checks whether Face ID is set up to tell a locked phone from a switch to another app. It never asks you to use it.
+    entitlements:
+      path: Config/QuietHoursFront/QuietHoursFront.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID)
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) QH_FRONT_MODE
+    dependencies:
+      - target: QuietHoursWidgets
+    scheme:
+      gatherCoverageData: false
+
+  # DeviceActivity monitor: applies the lock at the window's start and removes it at the end,
+  # whether or not the app is running. Screen Time mode only.
+  QuietHoursMonitor:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Extensions/Monitor
+      - path: Shared/Core
+      - path: Shared/Activity
+      - path: Shared/ScreenTime
+    info:
+      path: Extensions/Monitor/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours Monitor
+        QuietHoursAppGroup: $(QH_APP_GROUP)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).QuietMonitor
+    entitlements:
+      path: Extensions/Monitor/QuietHoursMonitor.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID).Monitor
+
+  # Shield configuration: the content drawn over a locked app. Screen Time mode only.
+  QuietHoursShieldConfiguration:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Extensions/ShieldConfiguration
+      - path: Shared/Core
+      - path: Shared/ScreenTime
+    info:
+      path: Extensions/ShieldConfiguration/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours Shield
+        QuietHoursAppGroup: $(QH_APP_GROUP)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettingsUI.shield-configuration-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).QuietShieldConfiguration
+    entitlements:
+      path: Extensions/ShieldConfiguration/QuietHoursShieldConfiguration.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID).ShieldConfiguration
+
+  # Shield action: handles Stay and Leave quiet hours. Screen Time mode only.
+  QuietHoursShieldAction:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Extensions/ShieldAction
+      - path: Shared/Core
+      - path: Shared/Activity
+      - path: Shared/ScreenTime
+    info:
+      path: Extensions/ShieldAction/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours Shield Action
+        QuietHoursAppGroup: $(QH_APP_GROUP)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettings.shield-action-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).QuietShieldAction
+    entitlements:
+      path: Extensions/ShieldAction/QuietHoursShieldAction.entitlements
+      properties:
+        com.apple.developer.family-controls: true
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID).ShieldAction
+
+  # Widget extension that renders the Live Activity. Used by both variants.
+  QuietHoursWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Extensions/Widgets
+      - path: Shared/Activity/QuietActivityAttributes.swift
+    info:
+      path: Extensions/Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Quiet Hours Widgets
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Extensions/Widgets/QuietHoursWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - $(QH_APP_GROUP)
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(QH_BUNDLE_ID).Widgets

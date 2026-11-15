@@ -1,0 +1,49 @@
+# Quiet Hours API (Cloudflare Worker + D1).
+#
+# The values in [vars] are the PRODUCTION defaults. They are deliberately the
+# safe ones: sign-in codes go by email (not wired yet, so sign-in returns a
+# clear 503 until it is) and the AI is the real Claude API.
+#
+# Local development overrides them on the command line (see package.json
+# "dev"), never here, so a deploy can never pick up a development mode.
+name = "quiet-hours"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+[vars]
+ENVIRONMENT = "production"
+SIGNIN_CODE_DELIVERY = "email"
+AI_MODE = "anthropic"
+
+# Secrets (never in this file):
+#   ANTHROPIC_API_KEY  wrangler secret put ANTHROPIC_API_KEY   (locally: .dev.vars)
+#   ADMIN_SECRET       wrangler secret put ADMIN_SECRET        (locally: set by `npm run dev`)
+
+[[d1_databases]]
+binding = "DB"
+database_name = "quiet-hours"
+# The database created with `wrangler d1 create quiet-hours` on 2026-11-14.
+database_id = "6ef779ae-80a5-46cd-a745-e95bbcabb8bb"
+migrations_dir = "migrations"
+
+# ---------------------------------------------------------------------------
+# The private demo deployment (`wrangler deploy --env demo`), used by the owner's
+# own phone for the hackathon video. It is NOT the production service:
+#   * sign-in codes are returned in the response and shown on screen, so anyone
+#     who knows the URL can sign in as any @usc.edu address;
+#   * it holds simulated "demo" participants (rows marked is_demo).
+# The AI is the real Claude API. Admin calls need ADMIN_SECRET, set with
+# `wrangler secret put ADMIN_SECRET --env demo`, never written here.
+[env.demo]
+name = "quiet-hours-demo"
+
+[env.demo.vars]
+ENVIRONMENT = "development"
+SIGNIN_CODE_DELIVERY = "INSECURE_DEV_RETURN_CODE_IN_RESPONSE"
+AI_MODE = "anthropic"
+
+[[env.demo.d1_databases]]
+binding = "DB"
+database_name = "quiet-hours"
+database_id = "6ef779ae-80a5-46cd-a745-e95bbcabb8bb"
+migrations_dir = "migrations"

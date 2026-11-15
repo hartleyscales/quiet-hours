@@ -1,0 +1,80 @@
+{
+  "weekOf": "2026-11-16",
+  "timezone": "America/Los_Angeles",
+  "population": { "students": 47000, "livingOnCampus": 11500 },
+  "classLoad": [
+    { "date": "2026-11-16", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 2600, 5200, 8100, 8900, 7400, 8300, 7900, 6200, 4800, 3100, 2400, 1500, 600, 150, 0, 0] },
+    { "date": "2026-11-17", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 2900, 6100, 8600, 7300, 6900, 8800, 8200, 6900, 5600, 3600, 2900, 2100, 900, 200, 0, 0] },
+    { "date": "2026-11-18", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 2500, 5000, 8000, 8700, 7200, 8100, 7700, 6000, 4600, 2900, 2200, 1300, 500, 100, 0, 0] },
+    { "date": "2026-11-19", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 2800, 6000, 8400, 7100, 6700, 8500, 8000, 6600, 5200, 3300, 2600, 1800, 800, 150, 0, 0] },
+    { "date": "2026-11-20", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 1600, 3900, 5800, 6100, 4200, 3600, 2900, 1700, 900, 300, 0, 0, 0, 0, 0, 0] },
+    { "date": "2026-11-21", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 0, 120, 160, 160, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] },
+    { "date": "2026-11-22", "studentsInClassByHour": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }
+  ],
+  "games": [
+    {
+      "title": "Women's basketball vs. Cal State Fullerton",
+      "sport": "basketball",
+      "startLocal": "2026-11-18T19:00",
+      "endLocal": "2026-11-18T21:00",
+      "venue": "Galen Center",
+      "home": true,
+      "expectedAttendance": 3500
+    },
+    {
+      "title": "Men's basketball vs. Pepperdine",
+      "sport": "basketball",
+      "startLocal": "2026-11-20T19:30",
+      "endLocal": "2026-11-20T21:30",
+      "venue": "Galen Center",
+      "home": true,
+      "expectedAttendance": 7000
+    },
+    {
+      "title": "Football at UCLA",
+      "sport": "football",
+      "startLocal": "2026-11-21T17:00",
+      "endLocal": "2026-11-21T20:30",
+      "venue": "Rose Bowl, Pasadena",
+      "home": false,
+      "expectedAttendance": 70000
+    }
+  ],
+  "exams": [
+    {
+      "date": "2026-11-17",
+      "title": "MATH 125 midterm 2",
+      "scope": "large-course",
+      "studentsAffected": 1400,
+      "note": "Evening exam, 19:00-21:00, several rooms in Taper Hall"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "CHEM 105a midterm 3",
+      "scope": "large-course",
+      "studentsAffected": 1100,
+      "note": "Morning exam, 08:00-09:50"
+    },
+    {
+      "date": "2026-11-20",
+      "title": "Viterbi engineering design reviews",
+      "scope": "school",
+      "studentsAffected": 2300,
+      "note": "All day; teams present in Ronald Tutor Hall"
+    }
+  ],
+  "sunset": [
+    { "date": "2026-11-16", "sunsetLocal": "16:48" },
+    { "date": "2026-11-17", "sunsetLocal": "16:48" },
+    { "date": "2026-11-18", "sunsetLocal": "16:47" },
+    { "date": "2026-11-19", "sunsetLocal": "16:47" },
+    { "date": "2026-11-20", "sunsetLocal": "16:46" },
+    { "date": "2026-11-21", "sunsetLocal": "16:46" },
+    { "date": "2026-11-22", "sunsetLocal": "16:45" }
+  ],
+  "notes": [
+    "Thanksgiving break starts Wednesday 2026-11-25; many students leave the weekend of 2026-11-21.",
+    "Free concert on McCarthy Quad on Tuesday 2026-11-17, 18:00-20:00, about 1,500 expected.",
+    "Leavey Library is open 24 hours this week."
+  ]
+}

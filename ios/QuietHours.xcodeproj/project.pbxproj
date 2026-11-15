@@ -1,0 +1,1319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0081CA06C55AF94427C78F96 /* QuietHoursWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4C372BD5F5D3AADBB79DAD /* QuietHoursWidgets.swift */; };
+		018C1089ECA69BFE377D6AA6 /* LiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7501DDFF8C0644578A558C /* LiveActivityController.swift */; };
+		01C04C47C6AFC3267F559EB2 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B95FA7D49BD9B33E41F52F /* SignInScreen.swift */; };
+		051B2A041DC0538265DD2F77 /* QuietHoursShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A57C2BF04631B6551271C07C /* QuietHoursShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0684205218ECC0A4EDEC52F5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B0FBA77F6769ECCC80268 /* APIClient.swift */; };
+		071F83619003E8A221547177 /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7362EFDAAE28CA0ED48A8DB /* Depth.swift */; };
+		0798DC9B98C65697A7EA5E69 /* stars_quiet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0E952026073E3F5A8B45F1 /* stars_quiet.png */; };
+		079CAB45AA64AB9BDC315D68 /* OFL-Outfit.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01A6CDAE5C28D47D626AA31E /* OFL-Outfit.txt */; };
+		0DA19FFB63D17B47BF464A01 /* moon-col-dark.png.cells.json in Resources */ = {isa = PBXBuildFile; fileRef = 7178B0D5882A950D120A709D /* moon-col-dark.png.cells.json */; };
+		0DC3D0775F3A5AF7D52E7ED8 /* QuietWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */; };
+		0F20D19EC7D689216340C80F /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8BED249CFCD3E413E59F3 /* SettingsSheet.swift */; };
+		1306427BCCF103705EBDDCBD /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D5C168049744778E5659A /* HomeData.swift */; };
+		1765E4F3F7AD04A78BECEDD8 /* ScreenTimeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4934E651294C3F2131EC24 /* ScreenTimeLock.swift */; };
+		17B292621FF55CB9ADBA70A3 /* FrontLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4412413BF5178C1E6005F6EE /* FrontLock.swift */; };
+		17CB7229B1F2D074BE66F9F6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AF4D99CC7C9A729022697 /* DebugView.swift */; };
+		19BC9D865273924FCDE1C12F /* QuietActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */; };
+		1B717F1AB6E5CF86BF090CB9 /* OFL-InstrumentSerif.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8016781324BB05A00C1B644A /* OFL-InstrumentSerif.txt */; };
+		1E11A406C6E92F9A5B295096 /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA87F9D245EB467EB0B91EE1 /* TimeText.swift */; };
+		1EC7ABD3FBC097EF62D68B05 /* QuietHoursShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 09EFC33B40373E15E0138043 /* QuietHoursShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21D0391240FD3650F1109A43 /* Seams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FC1474240EA1E59D55BF4 /* Seams.swift */; };
+		222DF87DE574CE1DBF02A5BA /* LiveActivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */; };
+		236E4244A99AC504AEF12E25 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026B0FBA77F6769ECCC80268 /* APIClient.swift */; };
+		249758F538F0041442AC9591 /* HomeFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78201A47595D71EC9BD5981 /* HomeFixtures.swift */; };
+		2717D49DEC70DB6703077E67 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7031BF664A2EEF1BBE36F599 /* Keychain.swift */; };
+		2A6B4A204F943EC31248A4FC /* QuietActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */; };
+		2ADD1C3202DC9C78C689B946 /* QuietCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */; };
+		2C22D9495AE40377DD46E2D8 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F83FFF2C025853099D5A0 /* Design.swift */; };
+		2C400B3D24BCFC13F1514B51 /* QuietActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */; };
+		2F8A97B8A404E7D671597DFE /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE8D830DDBB55D1DF1A4ED /* Stage.swift */; };
+		3156E4B9C06DC7BB2017D436 /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53DA522080F70F414537EADD /* Outfit-Medium.ttf */; };
+		344DEF22E019269F8D00A0FE /* Seams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2FC1474240EA1E59D55BF4 /* Seams.swift */; };
+		347B5665AB9A70BFBDEF29BB /* BoardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DA906034D0270F52B533B /* BoardScreen.swift */; };
+		3D68CBA5BE2943FC850ADB67 /* LockTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9668B73FD9349A63F403B9 /* LockTargets.swift */; };
+		3DB57F32DD0C5F7C45CEB4DE /* QuietHoursEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1316A7A83ADD2307F012765 /* QuietHoursEngine.swift */; };
+		3E0BF3B65E73D44DEA0B116C /* AllowLockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042939964FD37E559052AEBE /* AllowLockScreen.swift */; };
+		3E60ABE00B800106826F075A /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B0664C889FE1139FF393E92 /* Outfit-Regular.ttf */; };
+		3F421009ACFBDE4F08E84AAF /* DebugLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0638AA248C7040572E45 /* DebugLaunch.swift */; };
+		40262912C2B352DDB08A1DA3 /* LockTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9668B73FD9349A63F403B9 /* LockTargets.swift */; };
+		42AAD385EDECA34859F60D3D /* HomeFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78201A47595D71EC9BD5981 /* HomeFixtures.swift */; };
+		45151BED49F9860BFF1FA63A /* WindowSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC249274C085B6DBA610875 /* WindowSchedule.swift */; };
+		4979D4BB9EC0AED59BBAF8BF /* QuietCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */; };
+		4CF56DABEFA034FD4675D446 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6F02BC7983834CD67E879 /* Models.swift */; };
+		4D4796FCA712AB21C2ABD3A2 /* LiveActivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */; };
+		4F28553F5C2FAE168E77DD4B /* DebugLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0638AA248C7040572E45 /* DebugLaunch.swift */; };
+		4FE970FCF9A8779E0D54AC7E /* QuietActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */; };
+		54A6CF8D446A478AB909EA06 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8BED249CFCD3E413E59F3 /* SettingsSheet.swift */; };
+		54EDAB4DB34A6DEF8238B5EB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17104D093ADB2EC6D581B03A /* RootView.swift */; };
+		568E628805164B2EA4977170 /* InstrumentSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAC8D9EAD348229D8761C0 /* InstrumentSerif-Italic.ttf */; };
+		56C2B8A0923B42BD539CBF61 /* moon-col-dark.png.cells.json in Resources */ = {isa = PBXBuildFile; fileRef = 7178B0D5882A950D120A709D /* moon-col-dark.png.cells.json */; };
+		57C5809DD7E4687A5E6BE77B /* AppPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0AA1F5BE7A2B95F0AAD798 /* AppPicker.swift */; };
+		5BD7E2DE393B5916A5BA50FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F68BBC9A62522D3514B556C /* HomeView.swift */; };
+		5C01F7FF723457E12D40E1CC /* QuietStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED783B5907DF98B04C815352 /* QuietStore.swift */; };
+		5CF8D9E2F232B938CAC6F51E /* HowItWorksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C9DE795C1BD04C0A2AB95 /* HowItWorksScreen.swift */; };
+		5DAD9F8202464639AD8A60E1 /* LockTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9668B73FD9349A63F403B9 /* LockTargets.swift */; };
+		5EABA22F6FEEB3839457DEEC /* ShieldCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */; };
+		600ADFC8F4F3387D32170863 /* QuietHoursWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E72F846B22744B373A7A20CF /* QuietHoursWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601295A35DF7519D5830217A /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84F83FFF2C025853099D5A0 /* Design.swift */; };
+		63E296F4B8FE6CF8A8D6D4F6 /* QuietWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */; };
+		648DC0B75C4BE5F74097FB7C /* QuietHoursWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E72F846B22744B373A7A20CF /* QuietHoursWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		65C60AEC4C66C8E2E017BCD5 /* QuietConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC12850B00FA2A4E448F48 /* QuietConstants.swift */; };
+		670683F29F1DBDB8960D94E8 /* LockedMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432A522DC4E4B3E01BF0A8D0 /* LockedMoon.swift */; };
+		69DCC1D1085DB9455203D7DB /* AppPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD0E8DB7E8AEA9FC1D94EB /* AppPicker.swift */; };
+		6AD9679C283025AA49CE3A2D /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06427861DA583800150FC161 /* Outfit-Light.ttf */; };
+		6B273A032C1F2789C639D3C1 /* QuietConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC12850B00FA2A4E448F48 /* QuietConstants.swift */; };
+		71E79035E021378AA1642DCA /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D949BA3515AAFCE82CFC803 /* Stars.swift */; };
+		7348632C58B061A72AAAB7BA /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B95FA7D49BD9B33E41F52F /* SignInScreen.swift */; };
+		737508A86ADB40B26F05809C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64CBAF4D02033466AD7C58A /* Components.swift */; };
+		74A6B31406AA714D7B5D0568 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AF4D99CC7C9A729022697 /* DebugView.swift */; };
+		74F5D2BB7BEF938EB8B5EC7D /* QuietHoursMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F52D8EA8DEE9018EDCDE0F89 /* QuietHoursMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76E167B64F5BEA6F5F825AB1 /* QuietStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED783B5907DF98B04C815352 /* QuietStore.swift */; };
+		77FC8A084D49B5D76AA2E96D /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D5C168049744778E5659A /* HomeData.swift */; };
+		789D48CA2BE71ED190A3C77D /* LiveActivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */; };
+		7A1A2E0095737EE20243A9A8 /* Depth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7362EFDAAE28CA0ED48A8DB /* Depth.swift */; };
+		7C5C4726C9758EB0CDACD688 /* QuietHoursEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1316A7A83ADD2307F012765 /* QuietHoursEngine.swift */; };
+		7CDFAFA0AE58CE295290486B /* QuietActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */; };
+		801AB27E4E096F9E756F6EDF /* DeviceSignals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D477D825C3C7CB1B083C3F /* DeviceSignals.swift */; };
+		8059B206ECA263832B84393A /* QuietHoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578516FCF228BBC2679937FA /* QuietHoursApp.swift */; };
+		846AE77144DA92B77AA074C0 /* LiveActivityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */; };
+		873F67E8A8E4100D2400E875 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9E40D9E397DCD655FE2A8 /* Icons.swift */; };
+		88FAA1AAC5C562FA2F908E93 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6F02BC7983834CD67E879 /* Models.swift */; };
+		898DB85D799DD2308F4C75DA /* QuietConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC12850B00FA2A4E448F48 /* QuietConstants.swift */; };
+		8AE5F8D115A8C5C377F1E826 /* LockBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9E16AA1AD25237E73BED6 /* LockBackend.swift */; };
+		9375ECB72C341F4F3EABA8E1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17104D093ADB2EC6D581B03A /* RootView.swift */; };
+		956BF61C1F344B3DC01830F1 /* QuietWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */; };
+		9590969130FAABE268F9D089 /* QuietWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */; };
+		96B9DDFA6028DFEA122724F0 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D949BA3515AAFCE82CFC803 /* Stars.swift */; };
+		96BA9C1C0EE2536F5FD8DF18 /* LockedMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432A522DC4E4B3E01BF0A8D0 /* LockedMoon.swift */; };
+		970ED2645F3B3D8520FFB58A /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D2372F539DCAD46BFC0A3 /* Dots.swift */; };
+		977B1650B331ECC56EE0D9AE /* QuietCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */; };
+		99809025BAF51F6288279A95 /* ShieldCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */; };
+		9B0C55B2D8AE570C5F31C10C /* InstrumentSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DBAC8D9EAD348229D8761C0 /* InstrumentSerif-Italic.ttf */; };
+		9B59FA6ECD6594179C9FCD69 /* QuietMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EFC9C7B317198E70C2D43 /* QuietMonitor.swift */; };
+		9C9F64A99BB1D0891B76918B /* BoardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DA906034D0270F52B533B /* BoardScreen.swift */; };
+		9DA2B5B07651FF6884D24E23 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7031BF664A2EEF1BBE36F599 /* Keychain.swift */; };
+		9E006D25F5F187887EE53954 /* QuietWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */; };
+		A27BD56C43AB4F91F78E3B6B /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53DA522080F70F414537EADD /* Outfit-Medium.ttf */; };
+		A4C1C81D49F2C0BD34CE4AFC /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45614B80CFC8BCFF059C2323 /* AppModel.swift */; };
+		A526169EE68828245FB7E518 /* WindowEndTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3704E4A33867D74DBFE061 /* WindowEndTask.swift */; };
+		AC85597248167F346A53F257 /* QuietStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED783B5907DF98B04C815352 /* QuietStore.swift */; };
+		ADE7C952C3852DF6886908AD /* PreStartNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD86D5A03440C1E8CE4E109 /* PreStartNotification.swift */; };
+		AEA8820D8679C623440E1CF4 /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06427861DA583800150FC161 /* Outfit-Light.ttf */; };
+		B1C3BD59C56C96FE629C6D3A /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9E40D9E397DCD655FE2A8 /* Icons.swift */; };
+		B3B89783CBE26C07552056EF /* OFL-Outfit.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01A6CDAE5C28D47D626AA31E /* OFL-Outfit.txt */; };
+		B657660DFA8743193563880F /* moon-col-light.png.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E32A100ECEB06B0D541D6B4 /* moon-col-light.png.json */; };
+		B705111553E077A401AFC280 /* LockBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9E16AA1AD25237E73BED6 /* LockBackend.swift */; };
+		BA0B841ADBE8E32FCEE67E80 /* LockTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9668B73FD9349A63F403B9 /* LockTargets.swift */; };
+		BC91B71779A7E24ACD2E722C /* ShieldCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */; };
+		C27F21B0F647F2E4308C5D04 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45614B80CFC8BCFF059C2323 /* AppModel.swift */; };
+		C2ABAEDB8D0BAB24277C9EFE /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B0664C889FE1139FF393E92 /* Outfit-Regular.ttf */; };
+		C5BC1FE8AB716007B111289F /* AllowLockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042939964FD37E559052AEBE /* AllowLockScreen.swift */; };
+		C629BE64FDF726C0B24EB8E0 /* SteppedOutNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5500B2157AE41EA841A57FB /* SteppedOutNotification.swift */; };
+		C9DEB65545F3AE758FE3D1F5 /* QuietShieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858419028F322D80C4DAD9F6 /* QuietShieldConfiguration.swift */; };
+		CF0D4B2F0AA497C122148586 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64CBAF4D02033466AD7C58A /* Components.swift */; };
+		D0FD451CA937092E86D66565 /* QuietShieldAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DFCA6C04977D18548BE8AA /* QuietShieldAction.swift */; };
+		D10A0A76F4C77331B9F6E725 /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965E508A6E25E685B1242146 /* QuestionScreen.swift */; };
+		D31D724B05FA727B6FFBF8A1 /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D2372F539DCAD46BFC0A3 /* Dots.swift */; };
+		D542DF0D8C1BE4D6B5362350 /* QuietStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED783B5907DF98B04C815352 /* QuietStore.swift */; };
+		D7003183664E819A36B5D47C /* HowItWorksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3C9DE795C1BD04C0A2AB95 /* HowItWorksScreen.swift */; };
+		DAC6EE05DE56AB7F74B5D78C /* PreStartNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD86D5A03440C1E8CE4E109 /* PreStartNotification.swift */; };
+		DF40311F5B8C28359FFCACA5 /* WindowEndTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3704E4A33867D74DBFE061 /* WindowEndTask.swift */; };
+		E0A3DEA502A013337CA75A30 /* moon-col-light.png.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E32A100ECEB06B0D541D6B4 /* moon-col-light.png.json */; };
+		E0A3E1EBEE5F7CF8266D0948 /* QuietConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC12850B00FA2A4E448F48 /* QuietConstants.swift */; };
+		E2483DB31667054FDA112651 /* stars_quiet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0E952026073E3F5A8B45F1 /* stars_quiet.png */; };
+		E9D6C1C973E93D390AB5B21C /* QuietHoursApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578516FCF228BBC2679937FA /* QuietHoursApp.swift */; };
+		F04DBFDD7A777FF7E436E9DB /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE8D830DDBB55D1DF1A4ED /* Stage.swift */; };
+		F358047B956E27157803EC5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F68BBC9A62522D3514B556C /* HomeView.swift */; };
+		F397FF6214D128AA80999B60 /* OFL-InstrumentSerif.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8016781324BB05A00C1B644A /* OFL-InstrumentSerif.txt */; };
+		F3C9B9ECACCDDF61907ABE6D /* QuietCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */; };
+		F446D9C7B6A22DD551C4C564 /* QuietConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC12850B00FA2A4E448F48 /* QuietConstants.swift */; };
+		F4D656F7B47FB67A1C561AAA /* LiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7501DDFF8C0644578A558C /* LiveActivityController.swift */; };
+		F6265AB94E7121E1F0438964 /* QuietStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED783B5907DF98B04C815352 /* QuietStore.swift */; };
+		F9834507922DD7235E473C8A /* QuestionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965E508A6E25E685B1242146 /* QuestionScreen.swift */; };
+		FD9D7D5B469368AB9C2318E9 /* ShieldCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */; };
+		FDE6C7A15AE3AA5BE9572724 /* TimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA87F9D245EB467EB0B91EE1 /* TimeText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		523A5B0639B8C839C4657D3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183EB9BD6432B308E1C5481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89F5239DEE8F2D264EA893C5;
+			remoteInfo = QuietHoursWidgets;
+		};
+		7DCDBDB37E787A151CE68510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183EB9BD6432B308E1C5481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89F5239DEE8F2D264EA893C5;
+			remoteInfo = QuietHoursWidgets;
+		};
+		B02EA3CD83BE7F606C22CA99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183EB9BD6432B308E1C5481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1624911146627FA6643A0E55;
+			remoteInfo = QuietHoursShieldAction;
+		};
+		D4B3A14F7251EE2414C0AFEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183EB9BD6432B308E1C5481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18136BE8888B44547B7EC732;
+			remoteInfo = QuietHoursShieldConfiguration;
+		};
+		F4CDF0E6C894FB3E12E1F09A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A183EB9BD6432B308E1C5481 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DDCB3D74591A0138BBC9D51;
+			remoteInfo = QuietHoursMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		095000410597215F190EBA82 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				648DC0B75C4BE5F74097FB7C /* QuietHoursWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74448E411EDEF40F37D3E4CC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74F5D2BB7BEF938EB8B5EC7D /* QuietHoursMonitor.appex in Embed Foundation Extensions */,
+				051B2A041DC0538265DD2F77 /* QuietHoursShieldConfiguration.appex in Embed Foundation Extensions */,
+				1EC7ABD3FBC097EF62D68B05 /* QuietHoursShieldAction.appex in Embed Foundation Extensions */,
+				600ADFC8F4F3387D32170863 /* QuietHoursWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		010AF4D99CC7C9A729022697 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		01A6CDAE5C28D47D626AA31E /* OFL-Outfit.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Outfit.txt"; sourceTree = "<group>"; };
+		026B0FBA77F6769ECCC80268 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		042939964FD37E559052AEBE /* AllowLockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowLockScreen.swift; sourceTree = "<group>"; };
+		06427861DA583800150FC161 /* Outfit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Light.ttf"; sourceTree = "<group>"; };
+		0690B15A6FF752E77F146DC7 /* QuietHoursMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuietHoursMonitor.entitlements; sourceTree = "<group>"; };
+		09EFC33B40373E15E0138043 /* QuietHoursShieldAction.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = QuietHoursShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldCopy.swift; sourceTree = "<group>"; };
+		0FD86D5A03440C1E8CE4E109 /* PreStartNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreStartNotification.swift; sourceTree = "<group>"; };
+		17104D093ADB2EC6D581B03A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		17D9E16AA1AD25237E73BED6 /* LockBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockBackend.swift; sourceTree = "<group>"; };
+		1F7501DDFF8C0644578A558C /* LiveActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityController.swift; sourceTree = "<group>"; };
+		26AC12850B00FA2A4E448F48 /* QuietConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietConstants.swift; sourceTree = "<group>"; };
+		38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietCore.swift; sourceTree = "<group>"; };
+		3AEE8D830DDBB55D1DF1A4ED /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		3D9668B73FD9349A63F403B9 /* LockTargets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockTargets.swift; sourceTree = "<group>"; };
+		3E32A100ECEB06B0D541D6B4 /* moon-col-light.png.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "moon-col-light.png.json"; sourceTree = "<group>"; };
+		3E3704E4A33867D74DBFE061 /* WindowEndTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowEndTask.swift; sourceTree = "<group>"; };
+		3FE9E40D9E397DCD655FE2A8 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		432A522DC4E4B3E01BF0A8D0 /* LockedMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedMoon.swift; sourceTree = "<group>"; };
+		4412413BF5178C1E6005F6EE /* FrontLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontLock.swift; sourceTree = "<group>"; };
+		45614B80CFC8BCFF059C2323 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		486D5C168049744778E5659A /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
+		4A0AA1F5BE7A2B95F0AAD798 /* AppPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPicker.swift; sourceTree = "<group>"; };
+		4FC249274C085B6DBA610875 /* WindowSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSchedule.swift; sourceTree = "<group>"; };
+		535AED834188E19951861DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		53DA522080F70F414537EADD /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
+		578516FCF228BBC2679937FA /* QuietHoursApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietHoursApp.swift; sourceTree = "<group>"; };
+		5BB6F02BC7983834CD67E879 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		69DFCA6C04977D18548BE8AA /* QuietShieldAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietShieldAction.swift; sourceTree = "<group>"; };
+		6F1B902277F838EA63FC65DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7031BF664A2EEF1BBE36F599 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		7178B0D5882A950D120A709D /* moon-col-dark.png.cells.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "moon-col-dark.png.cells.json"; sourceTree = "<group>"; };
+		7D949BA3515AAFCE82CFC803 /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		7F3C9DE795C1BD04C0A2AB95 /* HowItWorksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowItWorksScreen.swift; sourceTree = "<group>"; };
+		8016781324BB05A00C1B644A /* OFL-InstrumentSerif.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-InstrumentSerif.txt"; sourceTree = "<group>"; };
+		83BD0E8DB7E8AEA9FC1D94EB /* AppPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPicker.swift; sourceTree = "<group>"; };
+		858419028F322D80C4DAD9F6 /* QuietShieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietShieldConfiguration.swift; sourceTree = "<group>"; };
+		86D25F00F70DF82768C36316 /* QuietHoursWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuietHoursWidgets.entitlements; sourceTree = "<group>"; };
+		87A1FD5EB8084B648B2871DA /* QuietHours.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuietHours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D477D825C3C7CB1B083C3F /* DeviceSignals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSignals.swift; sourceTree = "<group>"; };
+		8E4C372BD5F5D3AADBB79DAD /* QuietHoursWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietHoursWidgets.swift; sourceTree = "<group>"; };
+		8F68BBC9A62522D3514B556C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		93B95FA7D49BD9B33E41F52F /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		965E508A6E25E685B1242146 /* QuestionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionScreen.swift; sourceTree = "<group>"; };
+		9A2FC1474240EA1E59D55BF4 /* Seams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seams.swift; sourceTree = "<group>"; };
+		9B0664C889FE1139FF393E92 /* Outfit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Regular.ttf"; sourceTree = "<group>"; };
+		9B0E952026073E3F5A8B45F1 /* stars_quiet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars_quiet.png; sourceTree = "<group>"; };
+		9C4934E651294C3F2131EC24 /* ScreenTimeLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeLock.swift; sourceTree = "<group>"; };
+		9C8D0638AA248C7040572E45 /* DebugLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLaunch.swift; sourceTree = "<group>"; };
+		9DBAC8D9EAD348229D8761C0 /* InstrumentSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstrumentSerif-Italic.ttf"; sourceTree = "<group>"; };
+		A1316A7A83ADD2307F012765 /* QuietHoursEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietHoursEngine.swift; sourceTree = "<group>"; };
+		A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietActivityAttributes.swift; sourceTree = "<group>"; };
+		A57C2BF04631B6551271C07C /* QuietHoursShieldConfiguration.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = QuietHoursShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64CBAF4D02033466AD7C58A /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A7362EFDAAE28CA0ED48A8DB /* Depth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depth.swift; sourceTree = "<group>"; };
+		AA87F9D245EB467EB0B91EE1 /* TimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeText.swift; sourceTree = "<group>"; };
+		AE7D2372F539DCAD46BFC0A3 /* Dots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots.swift; sourceTree = "<group>"; };
+		BFC760B3DB846E20AD25F595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C17EFC9C7B317198E70C2D43 /* QuietMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietMonitor.swift; sourceTree = "<group>"; };
+		C47F9D45E2E193B6E4F91D8F /* QuietHoursShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuietHoursShieldAction.entitlements; sourceTree = "<group>"; };
+		C5500B2157AE41EA841A57FB /* SteppedOutNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteppedOutNotification.swift; sourceTree = "<group>"; };
+		C78201A47595D71EC9BD5981 /* HomeFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFixtures.swift; sourceTree = "<group>"; };
+		C84F83FFF2C025853099D5A0 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		CAD8BED249CFCD3E413E59F3 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+		D7C3AC3E1591FD727511F5CB /* QuietHoursFront.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuietHoursFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86DA906034D0270F52B533B /* BoardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardScreen.swift; sourceTree = "<group>"; };
+		E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietWindow.swift; sourceTree = "<group>"; };
+		E72F846B22744B373A7A20CF /* QuietHoursWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = QuietHoursWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB56A5D57D0C57A1BD97B970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ED783B5907DF98B04C815352 /* QuietStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietStore.swift; sourceTree = "<group>"; };
+		F52D8EA8DEE9018EDCDE0F89 /* QuietHoursMonitor.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = QuietHoursMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityBridge.swift; sourceTree = "<group>"; };
+		FFE8561E97479CB8677D8131 /* QuietHoursShieldConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuietHoursShieldConfiguration.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1A35C4EC660A15BEA3AA3764 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DBAC8D9EAD348229D8761C0 /* InstrumentSerif-Italic.ttf */,
+				8016781324BB05A00C1B644A /* OFL-InstrumentSerif.txt */,
+				01A6CDAE5C28D47D626AA31E /* OFL-Outfit.txt */,
+				06427861DA583800150FC161 /* Outfit-Light.ttf */,
+				53DA522080F70F414537EADD /* Outfit-Medium.ttf */,
+				9B0664C889FE1139FF393E92 /* Outfit-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31AA2ABEF097E6BC167A40B0 /* ScreenTime */ = {
+			isa = PBXGroup;
+			children = (
+				83BD0E8DB7E8AEA9FC1D94EB /* AppPicker.swift */,
+				9C4934E651294C3F2131EC24 /* ScreenTimeLock.swift */,
+				4FC249274C085B6DBA610875 /* WindowSchedule.swift */,
+			);
+			path = ScreenTime;
+			sourceTree = "<group>";
+		};
+		34B7C0489F6433B91821CDFD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				042939964FD37E559052AEBE /* AllowLockScreen.swift */,
+				45614B80CFC8BCFF059C2323 /* AppModel.swift */,
+				D86DA906034D0270F52B533B /* BoardScreen.swift */,
+				A64CBAF4D02033466AD7C58A /* Components.swift */,
+				9C8D0638AA248C7040572E45 /* DebugLaunch.swift */,
+				A7362EFDAAE28CA0ED48A8DB /* Depth.swift */,
+				C84F83FFF2C025853099D5A0 /* Design.swift */,
+				AE7D2372F539DCAD46BFC0A3 /* Dots.swift */,
+				486D5C168049744778E5659A /* HomeData.swift */,
+				C78201A47595D71EC9BD5981 /* HomeFixtures.swift */,
+				8F68BBC9A62522D3514B556C /* HomeView.swift */,
+				7F3C9DE795C1BD04C0A2AB95 /* HowItWorksScreen.swift */,
+				3FE9E40D9E397DCD655FE2A8 /* Icons.swift */,
+				432A522DC4E4B3E01BF0A8D0 /* LockedMoon.swift */,
+				965E508A6E25E685B1242146 /* QuestionScreen.swift */,
+				17104D093ADB2EC6D581B03A /* RootView.swift */,
+				9A2FC1474240EA1E59D55BF4 /* Seams.swift */,
+				CAD8BED249CFCD3E413E59F3 /* SettingsSheet.swift */,
+				93B95FA7D49BD9B33E41F52F /* SignInScreen.swift */,
+				3AEE8D830DDBB55D1DF1A4ED /* Stage.swift */,
+				7D949BA3515AAFCE82CFC803 /* Stars.swift */,
+				AA87F9D245EB467EB0B91EE1 /* TimeText.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3661878252D07FC18F001AE9 /* ShieldConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				BFC760B3DB846E20AD25F595 /* Info.plist */,
+				FFE8561E97479CB8677D8131 /* QuietHoursShieldConfiguration.entitlements */,
+				858419028F322D80C4DAD9F6 /* QuietShieldConfiguration.swift */,
+			);
+			path = ShieldConfiguration;
+			sourceTree = "<group>";
+		};
+		3CA6BEC497823B555266AD22 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C150F12265D35B24043A5917 /* Activity */,
+				76D62B192D4DB24D5352219A /* Core */,
+				8CBC03B96F720A818C1D86E9 /* ScreenTime */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3EEAFC1060274AEFFCD17FA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D4FE4D72F0130F792B9378B /* Monitor */,
+				9E28D7329AEAF22595EEF865 /* ShieldAction */,
+				3661878252D07FC18F001AE9 /* ShieldConfiguration */,
+				BA7DD8EF246EE1E065771B30 /* Widgets */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		53E6CB8D2F90DF3975F3F5DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				578516FCF228BBC2679937FA /* QuietHoursApp.swift */,
+				C59AD4DC62571596EACD18AA /* API */,
+				7641BDD8C8F249B6C3DDD85A /* Debug */,
+				A24E1F8DBB079C5ED71A4B40 /* Engine */,
+				ACC3BAF3729A64DE25D9783B /* Resources */,
+				34B7C0489F6433B91821CDFD /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6D4FE4D72F0130F792B9378B /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				535AED834188E19951861DED /* Info.plist */,
+				0690B15A6FF752E77F146DC7 /* QuietHoursMonitor.entitlements */,
+				C17EFC9C7B317198E70C2D43 /* QuietMonitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		7641BDD8C8F249B6C3DDD85A /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				010AF4D99CC7C9A729022697 /* DebugView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		76D62B192D4DB24D5352219A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26AC12850B00FA2A4E448F48 /* QuietConstants.swift */,
+				ED783B5907DF98B04C815352 /* QuietStore.swift */,
+				E26B5865CF1509554EF1C5F0 /* QuietWindow.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8CBC03B96F720A818C1D86E9 /* ScreenTime */ = {
+			isa = PBXGroup;
+			children = (
+				3D9668B73FD9349A63F403B9 /* LockTargets.swift */,
+				38B7171310FC9A1C1B2C3AAD /* QuietCore.swift */,
+				0FBDE5CD8C76B8EAD9CD8205 /* ShieldCopy.swift */,
+			);
+			path = ScreenTime;
+			sourceTree = "<group>";
+		};
+		9E28D7329AEAF22595EEF865 /* ShieldAction */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B902277F838EA63FC65DD /* Info.plist */,
+				C47F9D45E2E193B6E4F91D8F /* QuietHoursShieldAction.entitlements */,
+				69DFCA6C04977D18548BE8AA /* QuietShieldAction.swift */,
+			);
+			path = ShieldAction;
+			sourceTree = "<group>";
+		};
+		A24E1F8DBB079C5ED71A4B40 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				1F7501DDFF8C0644578A558C /* LiveActivityController.swift */,
+				17D9E16AA1AD25237E73BED6 /* LockBackend.swift */,
+				0FD86D5A03440C1E8CE4E109 /* PreStartNotification.swift */,
+				A1316A7A83ADD2307F012765 /* QuietHoursEngine.swift */,
+				3E3704E4A33867D74DBFE061 /* WindowEndTask.swift */,
+				F7B8EBA6822DEC77E19F44BB /* Front */,
+				31AA2ABEF097E6BC167A40B0 /* ScreenTime */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		ACC3BAF3729A64DE25D9783B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7178B0D5882A950D120A709D /* moon-col-dark.png.cells.json */,
+				3E32A100ECEB06B0D541D6B4 /* moon-col-light.png.json */,
+				9B0E952026073E3F5A8B45F1 /* stars_quiet.png */,
+				1A35C4EC660A15BEA3AA3764 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B47DACBD45C9F2B00015B401 = {
+			isa = PBXGroup;
+			children = (
+				53E6CB8D2F90DF3975F3F5DC /* App */,
+				3EEAFC1060274AEFFCD17FA6 /* Extensions */,
+				3CA6BEC497823B555266AD22 /* Shared */,
+				C4AF27762E7E21EE606EB3BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA7DD8EF246EE1E065771B30 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				EB56A5D57D0C57A1BD97B970 /* Info.plist */,
+				86D25F00F70DF82768C36316 /* QuietHoursWidgets.entitlements */,
+				8E4C372BD5F5D3AADBB79DAD /* QuietHoursWidgets.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		C150F12265D35B24043A5917 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				F59B7413D1B78DA24284B29D /* LiveActivityBridge.swift */,
+				A1A323C28785BA2598E8E0CA /* QuietActivityAttributes.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		C4AF27762E7E21EE606EB3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87A1FD5EB8084B648B2871DA /* QuietHours.app */,
+				D7C3AC3E1591FD727511F5CB /* QuietHoursFront.app */,
+				F52D8EA8DEE9018EDCDE0F89 /* QuietHoursMonitor.appex */,
+				09EFC33B40373E15E0138043 /* QuietHoursShieldAction.appex */,
+				A57C2BF04631B6551271C07C /* QuietHoursShieldConfiguration.appex */,
+				E72F846B22744B373A7A20CF /* QuietHoursWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C59AD4DC62571596EACD18AA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				026B0FBA77F6769ECCC80268 /* APIClient.swift */,
+				7031BF664A2EEF1BBE36F599 /* Keychain.swift */,
+				5BB6F02BC7983834CD67E879 /* Models.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F7B8EBA6822DEC77E19F44BB /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				4A0AA1F5BE7A2B95F0AAD798 /* AppPicker.swift */,
+				88D477D825C3C7CB1B083C3F /* DeviceSignals.swift */,
+				4412413BF5178C1E6005F6EE /* FrontLock.swift */,
+				C5500B2157AE41EA841A57FB /* SteppedOutNotification.swift */,
+			);
+			path = Front;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EE7EF8FBF150A96270FF194 /* QuietHours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F20D4037065510C3FA4983 /* Build configuration list for PBXNativeTarget "QuietHours" */;
+			buildPhases = (
+				8E6A22E4C1BE0A786C4CB322 /* Sources */,
+				A85EDA5C419E4ECCD3E2FEB3 /* Resources */,
+				74448E411EDEF40F37D3E4CC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC79F5E11F573D4D0E862516 /* PBXTargetDependency */,
+				8B99D8F6C792B43B682ECF07 /* PBXTargetDependency */,
+				2631AE6F77E29992AEB30A97 /* PBXTargetDependency */,
+				15C9E252B15D3499791C0B43 /* PBXTargetDependency */,
+			);
+			name = QuietHours;
+			packageProductDependencies = (
+			);
+			productName = QuietHours;
+			productReference = 87A1FD5EB8084B648B2871DA /* QuietHours.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1624911146627FA6643A0E55 /* QuietHoursShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D617DC88D31883D465285B3 /* Build configuration list for PBXNativeTarget "QuietHoursShieldAction" */;
+			buildPhases = (
+				E8B97FD922351B83DFC46416 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuietHoursShieldAction;
+			packageProductDependencies = (
+			);
+			productName = QuietHoursShieldAction;
+			productReference = 09EFC33B40373E15E0138043 /* QuietHoursShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		18136BE8888B44547B7EC732 /* QuietHoursShieldConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF14A24B150DF22CA1C635C /* Build configuration list for PBXNativeTarget "QuietHoursShieldConfiguration" */;
+			buildPhases = (
+				55D8979BA93B95E21A17CFAF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuietHoursShieldConfiguration;
+			packageProductDependencies = (
+			);
+			productName = QuietHoursShieldConfiguration;
+			productReference = A57C2BF04631B6551271C07C /* QuietHoursShieldConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3F3FFB02C5B568839BE2D4AF /* QuietHoursFront */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C58B02F0355538D06B512A8 /* Build configuration list for PBXNativeTarget "QuietHoursFront" */;
+			buildPhases = (
+				23D817D6E3A5C2CE133A542F /* Sources */,
+				5F04F48199795BF2A8D00CDD /* Resources */,
+				095000410597215F190EBA82 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6963723853EC3B53F0776BEC /* PBXTargetDependency */,
+			);
+			name = QuietHoursFront;
+			packageProductDependencies = (
+			);
+			productName = QuietHoursFront;
+			productReference = D7C3AC3E1591FD727511F5CB /* QuietHoursFront.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DDCB3D74591A0138BBC9D51 /* QuietHoursMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE43AA17A596EA2A1D975A8 /* Build configuration list for PBXNativeTarget "QuietHoursMonitor" */;
+			buildPhases = (
+				7F74F1BA4581945EAC1F84E3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuietHoursMonitor;
+			packageProductDependencies = (
+			);
+			productName = QuietHoursMonitor;
+			productReference = F52D8EA8DEE9018EDCDE0F89 /* QuietHoursMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		89F5239DEE8F2D264EA893C5 /* QuietHoursWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51A0657596BC867FEF54C8F8 /* Build configuration list for PBXNativeTarget "QuietHoursWidgets" */;
+			buildPhases = (
+				49C5353627105E404BFFFF6F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuietHoursWidgets;
+			packageProductDependencies = (
+			);
+			productName = QuietHoursWidgets;
+			productReference = E72F846B22744B373A7A20CF /* QuietHoursWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A183EB9BD6432B308E1C5481 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0EE7EF8FBF150A96270FF194 = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+					1624911146627FA6643A0E55 = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+					18136BE8888B44547B7EC732 = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+					3F3FFB02C5B568839BE2D4AF = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+					6DDCB3D74591A0138BBC9D51 = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+					89F5239DEE8F2D264EA893C5 = {
+						DevelopmentTeam = AT9J4ACTP9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A3430DC98A55FCF5F6E2FFDF /* Build configuration list for PBXProject "QuietHours" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B47DACBD45C9F2B00015B401;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C4AF27762E7E21EE606EB3BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EE7EF8FBF150A96270FF194 /* QuietHours */,
+				3F3FFB02C5B568839BE2D4AF /* QuietHoursFront */,
+				6DDCB3D74591A0138BBC9D51 /* QuietHoursMonitor */,
+				18136BE8888B44547B7EC732 /* QuietHoursShieldConfiguration */,
+				1624911146627FA6643A0E55 /* QuietHoursShieldAction */,
+				89F5239DEE8F2D264EA893C5 /* QuietHoursWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F04F48199795BF2A8D00CDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568E628805164B2EA4977170 /* InstrumentSerif-Italic.ttf in Resources */,
+				F397FF6214D128AA80999B60 /* OFL-InstrumentSerif.txt in Resources */,
+				B3B89783CBE26C07552056EF /* OFL-Outfit.txt in Resources */,
+				AEA8820D8679C623440E1CF4 /* Outfit-Light.ttf in Resources */,
+				3156E4B9C06DC7BB2017D436 /* Outfit-Medium.ttf in Resources */,
+				3E60ABE00B800106826F075A /* Outfit-Regular.ttf in Resources */,
+				0DA19FFB63D17B47BF464A01 /* moon-col-dark.png.cells.json in Resources */,
+				E0A3DEA502A013337CA75A30 /* moon-col-light.png.json in Resources */,
+				E2483DB31667054FDA112651 /* stars_quiet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A85EDA5C419E4ECCD3E2FEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0C55B2D8AE570C5F31C10C /* InstrumentSerif-Italic.ttf in Resources */,
+				1B717F1AB6E5CF86BF090CB9 /* OFL-InstrumentSerif.txt in Resources */,
+				079CAB45AA64AB9BDC315D68 /* OFL-Outfit.txt in Resources */,
+				6AD9679C283025AA49CE3A2D /* Outfit-Light.ttf in Resources */,
+				A27BD56C43AB4F91F78E3B6B /* Outfit-Medium.ttf in Resources */,
+				C2ABAEDB8D0BAB24277C9EFE /* Outfit-Regular.ttf in Resources */,
+				56C2B8A0923B42BD539CBF61 /* moon-col-dark.png.cells.json in Resources */,
+				B657660DFA8743193563880F /* moon-col-light.png.json in Resources */,
+				0798DC9B98C65697A7EA5E69 /* stars_quiet.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23D817D6E3A5C2CE133A542F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0684205218ECC0A4EDEC52F5 /* APIClient.swift in Sources */,
+				C5BC1FE8AB716007B111289F /* AllowLockScreen.swift in Sources */,
+				C27F21B0F647F2E4308C5D04 /* AppModel.swift in Sources */,
+				57C5809DD7E4687A5E6BE77B /* AppPicker.swift in Sources */,
+				9C9F64A99BB1D0891B76918B /* BoardScreen.swift in Sources */,
+				737508A86ADB40B26F05809C /* Components.swift in Sources */,
+				3F421009ACFBDE4F08E84AAF /* DebugLaunch.swift in Sources */,
+				74A6B31406AA714D7B5D0568 /* DebugView.swift in Sources */,
+				7A1A2E0095737EE20243A9A8 /* Depth.swift in Sources */,
+				2C22D9495AE40377DD46E2D8 /* Design.swift in Sources */,
+				801AB27E4E096F9E756F6EDF /* DeviceSignals.swift in Sources */,
+				D31D724B05FA727B6FFBF8A1 /* Dots.swift in Sources */,
+				17B292621FF55CB9ADBA70A3 /* FrontLock.swift in Sources */,
+				77FC8A084D49B5D76AA2E96D /* HomeData.swift in Sources */,
+				42AAD385EDECA34859F60D3D /* HomeFixtures.swift in Sources */,
+				5BD7E2DE393B5916A5BA50FD /* HomeView.swift in Sources */,
+				D7003183664E819A36B5D47C /* HowItWorksScreen.swift in Sources */,
+				B1C3BD59C56C96FE629C6D3A /* Icons.swift in Sources */,
+				9DA2B5B07651FF6884D24E23 /* Keychain.swift in Sources */,
+				222DF87DE574CE1DBF02A5BA /* LiveActivityBridge.swift in Sources */,
+				018C1089ECA69BFE377D6AA6 /* LiveActivityController.swift in Sources */,
+				8AE5F8D115A8C5C377F1E826 /* LockBackend.swift in Sources */,
+				670683F29F1DBDB8960D94E8 /* LockedMoon.swift in Sources */,
+				4CF56DABEFA034FD4675D446 /* Models.swift in Sources */,
+				DAC6EE05DE56AB7F74B5D78C /* PreStartNotification.swift in Sources */,
+				D10A0A76F4C77331B9F6E725 /* QuestionScreen.swift in Sources */,
+				2A6B4A204F943EC31248A4FC /* QuietActivityAttributes.swift in Sources */,
+				F446D9C7B6A22DD551C4C564 /* QuietConstants.swift in Sources */,
+				8059B206ECA263832B84393A /* QuietHoursApp.swift in Sources */,
+				7C5C4726C9758EB0CDACD688 /* QuietHoursEngine.swift in Sources */,
+				76E167B64F5BEA6F5F825AB1 /* QuietStore.swift in Sources */,
+				9590969130FAABE268F9D089 /* QuietWindow.swift in Sources */,
+				9375ECB72C341F4F3EABA8E1 /* RootView.swift in Sources */,
+				344DEF22E019269F8D00A0FE /* Seams.swift in Sources */,
+				0F20D19EC7D689216340C80F /* SettingsSheet.swift in Sources */,
+				7348632C58B061A72AAAB7BA /* SignInScreen.swift in Sources */,
+				2F8A97B8A404E7D671597DFE /* Stage.swift in Sources */,
+				71E79035E021378AA1642DCA /* Stars.swift in Sources */,
+				C629BE64FDF726C0B24EB8E0 /* SteppedOutNotification.swift in Sources */,
+				1E11A406C6E92F9A5B295096 /* TimeText.swift in Sources */,
+				DF40311F5B8C28359FFCACA5 /* WindowEndTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C5353627105E404BFFFF6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C400B3D24BCFC13F1514B51 /* QuietActivityAttributes.swift in Sources */,
+				0081CA06C55AF94427C78F96 /* QuietHoursWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55D8979BA93B95E21A17CFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D68CBA5BE2943FC850ADB67 /* LockTargets.swift in Sources */,
+				E0A3E1EBEE5F7CF8266D0948 /* QuietConstants.swift in Sources */,
+				2ADD1C3202DC9C78C689B946 /* QuietCore.swift in Sources */,
+				C9DEB65545F3AE758FE3D1F5 /* QuietShieldConfiguration.swift in Sources */,
+				5C01F7FF723457E12D40E1CC /* QuietStore.swift in Sources */,
+				9E006D25F5F187887EE53954 /* QuietWindow.swift in Sources */,
+				99809025BAF51F6288279A95 /* ShieldCopy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F74F1BA4581945EAC1F84E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846AE77144DA92B77AA074C0 /* LiveActivityBridge.swift in Sources */,
+				40262912C2B352DDB08A1DA3 /* LockTargets.swift in Sources */,
+				4FE970FCF9A8779E0D54AC7E /* QuietActivityAttributes.swift in Sources */,
+				6B273A032C1F2789C639D3C1 /* QuietConstants.swift in Sources */,
+				4979D4BB9EC0AED59BBAF8BF /* QuietCore.swift in Sources */,
+				9B59FA6ECD6594179C9FCD69 /* QuietMonitor.swift in Sources */,
+				F6265AB94E7121E1F0438964 /* QuietStore.swift in Sources */,
+				956BF61C1F344B3DC01830F1 /* QuietWindow.swift in Sources */,
+				5EABA22F6FEEB3839457DEEC /* ShieldCopy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6A22E4C1BE0A786C4CB322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236E4244A99AC504AEF12E25 /* APIClient.swift in Sources */,
+				3E0BF3B65E73D44DEA0B116C /* AllowLockScreen.swift in Sources */,
+				A4C1C81D49F2C0BD34CE4AFC /* AppModel.swift in Sources */,
+				69DCC1D1085DB9455203D7DB /* AppPicker.swift in Sources */,
+				347B5665AB9A70BFBDEF29BB /* BoardScreen.swift in Sources */,
+				CF0D4B2F0AA497C122148586 /* Components.swift in Sources */,
+				4F28553F5C2FAE168E77DD4B /* DebugLaunch.swift in Sources */,
+				17CB7229B1F2D074BE66F9F6 /* DebugView.swift in Sources */,
+				071F83619003E8A221547177 /* Depth.swift in Sources */,
+				601295A35DF7519D5830217A /* Design.swift in Sources */,
+				970ED2645F3B3D8520FFB58A /* Dots.swift in Sources */,
+				1306427BCCF103705EBDDCBD /* HomeData.swift in Sources */,
+				249758F538F0041442AC9591 /* HomeFixtures.swift in Sources */,
+				F358047B956E27157803EC5D /* HomeView.swift in Sources */,
+				5CF8D9E2F232B938CAC6F51E /* HowItWorksScreen.swift in Sources */,
+				873F67E8A8E4100D2400E875 /* Icons.swift in Sources */,
+				2717D49DEC70DB6703077E67 /* Keychain.swift in Sources */,
+				4D4796FCA712AB21C2ABD3A2 /* LiveActivityBridge.swift in Sources */,
+				F4D656F7B47FB67A1C561AAA /* LiveActivityController.swift in Sources */,
+				B705111553E077A401AFC280 /* LockBackend.swift in Sources */,
+				BA0B841ADBE8E32FCEE67E80 /* LockTargets.swift in Sources */,
+				96BA9C1C0EE2536F5FD8DF18 /* LockedMoon.swift in Sources */,
+				88FAA1AAC5C562FA2F908E93 /* Models.swift in Sources */,
+				ADE7C952C3852DF6886908AD /* PreStartNotification.swift in Sources */,
+				F9834507922DD7235E473C8A /* QuestionScreen.swift in Sources */,
+				19BC9D865273924FCDE1C12F /* QuietActivityAttributes.swift in Sources */,
+				65C60AEC4C66C8E2E017BCD5 /* QuietConstants.swift in Sources */,
+				F3C9B9ECACCDDF61907ABE6D /* QuietCore.swift in Sources */,
+				E9D6C1C973E93D390AB5B21C /* QuietHoursApp.swift in Sources */,
+				3DB57F32DD0C5F7C45CEB4DE /* QuietHoursEngine.swift in Sources */,
+				D542DF0D8C1BE4D6B5362350 /* QuietStore.swift in Sources */,
+				63E296F4B8FE6CF8A8D6D4F6 /* QuietWindow.swift in Sources */,
+				54EDAB4DB34A6DEF8238B5EB /* RootView.swift in Sources */,
+				1765E4F3F7AD04A78BECEDD8 /* ScreenTimeLock.swift in Sources */,
+				21D0391240FD3650F1109A43 /* Seams.swift in Sources */,
+				54A6CF8D446A478AB909EA06 /* SettingsSheet.swift in Sources */,
+				FD9D7D5B469368AB9C2318E9 /* ShieldCopy.swift in Sources */,
+				01C04C47C6AFC3267F559EB2 /* SignInScreen.swift in Sources */,
+				F04DBFDD7A777FF7E436E9DB /* Stage.swift in Sources */,
+				96B9DDFA6028DFEA122724F0 /* Stars.swift in Sources */,
+				FDE6C7A15AE3AA5BE9572724 /* TimeText.swift in Sources */,
+				A526169EE68828245FB7E518 /* WindowEndTask.swift in Sources */,
+				45151BED49F9860BFF1FA63A /* WindowSchedule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B97FD922351B83DFC46416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789D48CA2BE71ED190A3C77D /* LiveActivityBridge.swift in Sources */,
+				5DAD9F8202464639AD8A60E1 /* LockTargets.swift in Sources */,
+				7CDFAFA0AE58CE295290486B /* QuietActivityAttributes.swift in Sources */,
+				898DB85D799DD2308F4C75DA /* QuietConstants.swift in Sources */,
+				977B1650B331ECC56EE0D9AE /* QuietCore.swift in Sources */,
+				D0FD451CA937092E86D66565 /* QuietShieldAction.swift in Sources */,
+				AC85597248167F346A53F257 /* QuietStore.swift in Sources */,
+				0DC3D0775F3A5AF7D52E7ED8 /* QuietWindow.swift in Sources */,
+				BC91B71779A7E24ACD2E722C /* ShieldCopy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C9E252B15D3499791C0B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89F5239DEE8F2D264EA893C5 /* QuietHoursWidgets */;
+			targetProxy = 7DCDBDB37E787A151CE68510 /* PBXContainerItemProxy */;
+		};
+		2631AE6F77E29992AEB30A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1624911146627FA6643A0E55 /* QuietHoursShieldAction */;
+			targetProxy = B02EA3CD83BE7F606C22CA99 /* PBXContainerItemProxy */;
+		};
+		6963723853EC3B53F0776BEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89F5239DEE8F2D264EA893C5 /* QuietHoursWidgets */;
+			targetProxy = 523A5B0639B8C839C4657D3F /* PBXContainerItemProxy */;
+		};
+		8B99D8F6C792B43B682ECF07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18136BE8888B44547B7EC732 /* QuietHoursShieldConfiguration */;
+			targetProxy = D4B3A14F7251EE2414C0AFEA /* PBXContainerItemProxy */;
+		};
+		CC79F5E11F573D4D0E862516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DDCB3D74591A0138BBC9D51 /* QuietHoursMonitor */;
+			targetProxy = F4CDF0E6C894FB3E12E1F09A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09367F39C089A83FC3D1DC17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/QuietHoursFront/QuietHoursFront.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Config/QuietHoursFront/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) QH_FRONT_MODE";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12BA6E3EC54025A613DE4A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldConfiguration/QuietHoursShieldConfiguration.entitlements;
+				INFOPLIST_FILE = Extensions/ShieldConfiguration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).ShieldConfiguration";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1529FA8C988D7CAA6828DA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/Widgets/QuietHoursWidgets.entitlements;
+				INFOPLIST_FILE = Extensions/Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).Widgets";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		179919BC4A511FD6B2866371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldConfiguration/QuietHoursShieldConfiguration.entitlements;
+				INFOPLIST_FILE = Extensions/ShieldConfiguration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).ShieldConfiguration";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A514910181184513ADF18D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/Monitor/QuietHoursMonitor.entitlements;
+				INFOPLIST_FILE = Extensions/Monitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).Monitor";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D37A74DB3A8C4D086071760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/QuietHours/QuietHours.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Config/QuietHours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5689D0E99A703159425FD4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/Widgets/QuietHoursWidgets.entitlements;
+				INFOPLIST_FILE = Extensions/Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).Widgets";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		779F4C78FFE17887C981434B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldAction/QuietHoursShieldAction.entitlements;
+				INFOPLIST_FILE = Extensions/ShieldAction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).ShieldAction";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80AD302359CB07E7961271C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/ShieldAction/QuietHoursShieldAction.entitlements;
+				INFOPLIST_FILE = Extensions/ShieldAction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).ShieldAction";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		925BDC8918FDD482218229F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extensions/Monitor/QuietHoursMonitor.entitlements;
+				INFOPLIST_FILE = Extensions/Monitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID).Monitor";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ABC358090C0B407314C5875F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AT9J4ACTP9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				QH_API_BASE_URL = "http://localhost:8790";
+				QH_APP_GROUP = "group.com.hms-web-development.QuietHours";
+				QH_BUNDLE_ID = "com.hms-web-development.QuietHours";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B6BFB8F762A2ED857B11AC58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AT9J4ACTP9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				QH_API_BASE_URL = "http://localhost:8790";
+				QH_APP_GROUP = "group.com.hms-web-development.QuietHours";
+				QH_BUNDLE_ID = "com.hms-web-development.QuietHours";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DA651F84FA969DDE34936B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/QuietHours/QuietHours.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Config/QuietHours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F749D30BDF0A0C7A3562ADF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Config/QuietHoursFront/QuietHoursFront.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Config/QuietHoursFront/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(QH_BUNDLE_ID)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) QH_FRONT_MODE";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D617DC88D31883D465285B3 /* Build configuration list for PBXNativeTarget "QuietHoursShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AD302359CB07E7961271C2 /* Debug */,
+				779F4C78FFE17887C981434B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2C58B02F0355538D06B512A8 /* Build configuration list for PBXNativeTarget "QuietHoursFront" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F749D30BDF0A0C7A3562ADF7 /* Debug */,
+				09367F39C089A83FC3D1DC17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		51A0657596BC867FEF54C8F8 /* Build configuration list for PBXNativeTarget "QuietHoursWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5689D0E99A703159425FD4A3 /* Debug */,
+				1529FA8C988D7CAA6828DA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84F20D4037065510C3FA4983 /* Build configuration list for PBXNativeTarget "QuietHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D37A74DB3A8C4D086071760 /* Debug */,
+				DA651F84FA969DDE34936B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3430DC98A55FCF5F6E2FFDF /* Build configuration list for PBXProject "QuietHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABC358090C0B407314C5875F /* Debug */,
+				B6BFB8F762A2ED857B11AC58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCF14A24B150DF22CA1C635C /* Build configuration list for PBXNativeTarget "QuietHoursShieldConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179919BC4A511FD6B2866371 /* Debug */,
+				12BA6E3EC54025A613DE4A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDE43AA17A596EA2A1D975A8 /* Build configuration list for PBXNativeTarget "QuietHoursMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A514910181184513ADF18D5 /* Debug */,
+				925BDC8918FDD482218229F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A183EB9BD6432B308E1C5481 /* Project object */;
+}
